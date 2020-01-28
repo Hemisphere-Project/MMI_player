@@ -1,0 +1,52 @@
+
+<!doctype html>
+<HTML>
+  <HEAD>
+    <title>VIDEO PLAYER</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- JQUERY -->
+    <script type='text/javascript' src='lib/jquery-3.4.1.min.js'></script>
+    <!-- INT -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+  </HEAD>
+
+  <BODY>
+
+    <div id="waitScreen">
+      <div class="bigTitle">
+        Comme Par Hasard
+      </div>
+    </div>
+
+
+
+    <div class="themeList">
+      <div class="themeListContainer">
+        <div id="definition" class="theme" index="0" >Définition Du Hasard </div>
+        <div id="bizarre" class="theme" index="0" >Le Hasard, C'est Bizarre </div>
+        <div id="createur" class="theme" index="0" >Le Hasard, Créateur </div>
+        <div id="carte_blanche" class="theme" index="0" >Carte <br> Blanche </div>
+      </div>
+    </div>
+
+    <div id="player">
+
+      <video id="videoplayer" style="background-color: #fff;" ></video>
+
+      <div id="controls">
+        <!-- <div id="playpause"> <img src="img/pause.png"> </div>
+        <div id="scrollbarContainer"> <div id="scrollbar"></div> </div>
+        <div id="timeDisplay"></div> -->
+        <div class="control" id="prev"> <img src="img/prev.png"> </div>
+        <div class="control" id="next"> <img src="img/next.png"> </div>
+        <div class="control" id="closer"> <img src="img/close.png"> </div>
+      </div>
+
+
+    </div>
+
+  </BODY>
+
+  </HTML>

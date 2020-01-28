@@ -1,0 +1,44 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15680\viewh9120\viewkind0
+\deftab720
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\b\fs24 \cf2 \expnd0\expndtw0\kerning0
+BASH NOTES
+\b0 \
+\
+#!/bin/bash\
+google-chrome --kiosk --incognito /home/mmi/Bureau/MMI/index.html\
+sudo shutdown -h +480\
+\
+\
+\'95 Cr\'e9er ficher \'91start.sh\'92 avec les commandes ci-dessus\
+\'95 Rendre le fichier ex\'e9cutable\
+chmod +x runme.sh\
+\'95 Mettre ce fichier dans les applications au d\'e9marrage (Lanceur / Applcations au d\'e9marrage)\
+\
+\
+\
+
+\b ABOUT AUTO SHUTDOWN
+\b0 \
+shutdown after 8h\
+\
+sudo shutdown -h +480\
+\
+
+\b BUT
+\b0 \
+commande ex\'e9cut\'e9e par sudo, du coup ca demande le password.\
+
+\b FIX
+\b0 \
+Configurer sudo pour ne pas demander de password pour la commande shutdown.\'a0\
+// Open visudo file\'a0\
+sudo visudo\
+// Add this line at end of file\
+ALL ALL=(ALL) NOPASSWD: /sbin/shutdown\
+}
